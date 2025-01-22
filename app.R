@@ -6,6 +6,7 @@ r_colors <- rgb(t(col2rgb(colors()) / 255))
 names(r_colors) <- colors()
 
 ui <- fluidPage(
+    h1("Hello folks"),
     leafletOutput("mymap"),
     p(),
     actionButton("recalc", "New points"),
